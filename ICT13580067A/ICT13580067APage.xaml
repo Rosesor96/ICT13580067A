@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+	xmlns="http://xamarin.com/schemas/2014/forms"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:ICT13580067A"
+	x:Class="ICT13580067A.ICT13580067APage"
+    BackgroundColor="Aqua"
+    Padding="0,20,0,1">
+    <ScrollView>
+        
+    <StackLayout
+        BackgroundColor="#778899"
+        Orientation="Vertical">
+
+        <Label
+            Text="Ratchakorn  Wannapuk"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="White"
+            TextColor="Blue"
+            LineBreakMode="NoWrap"
+            x:Name="firstNameLabel"/>
+     
+       <Label 
+            Text="Hello world"
+            HorizontalTextAlignment="Center"
+            BackgroundColor="White"
+            TextColor="Black"
+            x:Name="lastNameLabel"/>
+            
+       <Entry 
+            Placeholder="กรุณากรอกชื่อ"
+            Keyboard="Text"
+            BackgroundColor="Yellow"
+            x:Name="firstNameEntry"/>
+
+        <Button
+            Text="OK"
+            BackgroundColor="Silver"
+            Margin="100,15,100,10"
+            x:Name="okButton"/>
+
+        <DatePicker
+            TextColor="Blue"/>
+        
+        <TimePicker
+            TextColor="Blue"/>
+
+        <Picker
+            x:Name="genderPicker"
+            Title="กรุณาเลือกเพศ"/>
+        
+        <Label
+            x:Name="valueLabel"/>
+        
+        <Slider
+            Maximum="100"
+            Minimum="0"
+            Value="50"
+            x:Name="mySlider"/>
+
+        <Stepper
+            Maximum="10"
+            Minimum="0"
+            Value="0"
+            Increment="1"
+            x:Name="myStepper"/>
+        
+        <Switch
+            IsToggled="true"/>
+        
+        <Image
+            Source="baby.png"
+            HeightRequest="200"
+            Margin="0,10,0,10"/>
+        
+        <WebView
+            Source="https://www.youtube.com/"
+            HeightRequest="650"/>
+
+    </StackLayout>
+        
+    </ScrollView>
+
+</ContentPage>
